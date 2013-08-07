@@ -1,0 +1,64 @@
+*
+{
+	margin: 0; /*Resetea los márgenes de todos los elementos en la página*/
+}
+body
+{
+	background-color: #AA7639;
+	color:#884900;
+	font-size: 46px;
+	text-align: center;
+	-webkit-user-select: none; /*Para que no se pueda seleccionar el texto interior de las fichas*/
+  	user-select: none; 
+}
+#game_board
+{
+	background-color: #884900;
+	border-radius: 5px;
+	margin: 20px auto;
+	position: relative;
+}
+#piece_container
+{
+	background-color: #AA7639;
+	font-size: 0;
+	height: 96%; /*El alto del div interior que conforma el tablero para dar la sensación de un borde grueso*/
+	left: 2%;
+	position: absolute;
+	top:2%;
+	width: 96%; /*El ancho del div interior que conforma el tablero para dar la sensación de un borde grueso*/
+}
+#talking_box
+{
+	background-color: #FFF3E6;
+	border: 5px solid #884900;
+	border-radius: 5px;
+	color: #FF8901;
+	height:auto;
+	margin: 10px auto;
+	padding-bottom: 5px;
+	width: 500px;
+}
+.game_piece
+{	
+	background-color: #FFF3E6;
+	border: 2px groove #737679;
+	box-sizing: border-box; /*Propiedad que hace que los bordes cuenten en el tamaño total de cada ficha*/
+	display: inline-block;		
+	height: 25%; /*Ancho de la ficha: la cuarta parte del tablero		*/
+	position: absolute;		
+	width: 25%;
+}
+.number_container
+{	
+	color: #FF8901;
+	cursor: default;
+	font-size: 50px;
+	height: 50%;
+	left: 50%;
+	margin: -25% 0 0-25%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 50%;
+}
